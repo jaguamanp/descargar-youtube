@@ -37,7 +37,8 @@ app.post('/download', async (req, res) => {
             output: tempFilePath
         };
 
-        let objFormat = format === 'mp3' ? objMp3 : objMp4;
+        let objFormat = format === 'mp3' ? { ...objMp3, noCheckCertificates: true } : { ...objMp4, noCheckCertificates: true };
+
 
         youtubedl.exec(url, objFormat).then(() =>{
             res.status(200);
