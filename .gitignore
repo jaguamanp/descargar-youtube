@@ -1,0 +1,30 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+.env
+
+# Logs
+logs
+*.log
+
+# Docker
+*.pid
+*.seed
+docker-compose.override.yml
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Media temporales
+backend/media/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
